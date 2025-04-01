@@ -46,7 +46,8 @@ uint8                                         bIsKnockedback : 1;               
 uint8                                         bIsDBNO : 1;                                       // 0x0552
 class AFortWeapon*                            CurrentWeapon;                                     // 0x05C0
 class AFortWeapon*                            PreviousWeapon;                                    // 0x05C8
-
+inline bool BONE_ARRAY = 0x488;
+inline bool COMPONENT_TO_WORLD  = 0x1C0;
 // WORLD ESP
 TArray<class ULevel*>                         Levels;                                            // 0x0138
 class UFortItemDefinition*                    ItemDefinition;                                    // 0x0018
