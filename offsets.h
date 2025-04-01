@@ -15,3 +15,9 @@ float                                         ReviveFromDBNOTime;               
 float                                         DBNOStartTime;                                     // 0x2DFC
 float                                         DBNOInvulnerableTime;                              // 0x2E00
 bool                                          bADSWhileNotOnGround;                              // 0x3331
+class ULevel*                                 PersistentLevel;                                   // 0x0030
+class AGameStateBase*                         GameState;                                         // 0x0120
+class UGameInstance*                          OwningGameInstance;                                // 0x0180
+TArray<class ULocalPlayer*>                   LocalPlayers;                                      // 0x0038
+class APlayerState*                           PlayerState;                                       // 0x0228
+class USceneComponent*                        RootComponent;                                     // 0x0130
