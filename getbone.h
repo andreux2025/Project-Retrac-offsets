@@ -1,8 +1,8 @@
 // working!
 Vector3 GetEntityBone(uintptr_t mesh, int bone_id)
 {
-	uintptr_t BoneArray = read<uintptr_t>(mesh + BONE_ARRAY);
-	if (BoneArray == NULL) BoneArray = read<uintptr_t>(mesh + BONE_ARRAY + 0x10);
+	uintptr_t BoneArray = read<uintptr_t>(mesh + 0x488);
+	if (BoneArray == NULL) BoneArray = read<uintptr_t>(mesh + 0x488 + 0x10);
 	FTransform bone = read<FTransform>(BoneArray + (bone_id * 0x30));
 	FTransform ComponentToWorld = read<FTransform>(mesh + COMPONENT_TO_WORLD);
 	D3DMATRIX matrix = MatrixMultiplication(bone.ToMatrixWithScale(), ComponentToWorld.ToMatrixWithScale());
