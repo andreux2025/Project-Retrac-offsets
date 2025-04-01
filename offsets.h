@@ -36,7 +36,10 @@ struct FVector                                RelativeLocation;                 
 struct FRotator                               RelativeRotation;                                  // 0x0128
 bool                                          bHasWonAGame;                                      // 0x0DE0
 int32                                         KillScore;                                         // 0x0E9C
+uint8                                         bIsVisible : 1;                                    // 0x01F4
 
 
 // WORLD ESP
 TArray<class ULevel*>                         Levels;                                            // 0x0138
+class UFortItemDefinition*                    ItemDefinition;                                    // 0x0018
+class UWorld*                                 OwningWorld;                                       // 0x00B8
