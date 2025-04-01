@@ -1,3 +1,13 @@
+
+namespace Offsets
+{
+	constexpr int32 GObjects          = 0x091EDDD8;
+	constexpr int32 AppendString      = 0x03543C80;
+	constexpr int32 GNames            = 0x091D5140;
+	constexpr int32 GWorld            = 0x09328900;
+	constexpr int32 ProcessEvent      = 0x0374BDD0;
+	constexpr int32 ProcessEventIdx   = 0x00000043;
+}
 bHasStartedFloating;                               // 0x1434
 struct FVector                                RelativeScale3D;                                   // 0x0134
 class UAnimMontage*                           EquipAnimation;                                    // 0x0B00
