@@ -37,7 +37,11 @@ struct FRotator                               RelativeRotation;                 
 bool                                          bHasWonAGame;                                      // 0x0DE0
 int32                                         KillScore;                                         // 0x0E9C
 uint8                                         bIsVisible : 1;                                    // 0x01F4
-
+class APawn*                                  AcknowledgedPawn;                                  // 0x02A0
+class APlayerCameraManager*                   PlayerCameraManager;                               // 0x02B8
+float                                         InputYawScale;                                     // 0x042C
+float                                         InputPitchScale;                                   // 0x0430
+float                                         InputRollScale;                                    // 0x0434
 
 // WORLD ESP
 TArray<class ULevel*>                         Levels;                                            // 0x0138
