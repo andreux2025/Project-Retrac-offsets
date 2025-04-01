@@ -21,3 +21,8 @@ class UGameInstance*                          OwningGameInstance;               
 TArray<class ULocalPlayer*>                   LocalPlayers;                                      // 0x0038
 class APlayerState*                           PlayerState;                                       // 0x0228
 class USceneComponent*                        RootComponent;                                     // 0x0130
+struct FVector                                ComponentVelocity;                                 // 0x0140
+struct FVector                                RelativeLocation;                                  // 0x011C
+struct FRotator                               RelativeRotation;                                  // 0x0128
+bool                                          bHasWonAGame;                                      // 0x0DE0
+int32                                         KillScore;                                         // 0x0E9C
