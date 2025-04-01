@@ -36,3 +36,7 @@ struct FVector                                RelativeLocation;                 
 struct FRotator                               RelativeRotation;                                  // 0x0128
 bool                                          bHasWonAGame;                                      // 0x0DE0
 int32                                         KillScore;                                         // 0x0E9C
+
+
+// WORLD ESP
+TArray<class ULevel*>                         Levels;                                            // 0x0138
