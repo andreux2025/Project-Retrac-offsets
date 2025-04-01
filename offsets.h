@@ -42,6 +42,10 @@ class APlayerCameraManager*                   PlayerCameraManager;              
 float                                         InputYawScale;                                     // 0x042C
 float                                         InputPitchScale;                                   // 0x0430
 float                                         InputRollScale;                                    // 0x0434
+uint8                                         bIsKnockedback : 1;                                // 0x0538
+uint8                                         bIsDBNO : 1;                                       // 0x0552
+class AFortWeapon*                            CurrentWeapon;                                     // 0x05C0
+class AFortWeapon*                            PreviousWeapon;                                    // 0x05C8
 
 // WORLD ESP
 TArray<class ULevel*>                         Levels;                                            // 0x0138
