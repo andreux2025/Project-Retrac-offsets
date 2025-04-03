@@ -48,6 +48,7 @@ class AFortWeapon*                            CurrentWeapon;                    
 class AFortWeapon*                            PreviousWeapon;                                    // 0x05C8
 inline bool BONE_ARRAY = 0x488;
 inline bool COMPONENT_TO_WORLD  = 0x1C0;
+class USkeletalMeshComponent*                 Mesh;                                              // 0x0280
 // WORLD ESP
 TArray<class ULevel*>                         Levels;                                            // 0x0138
 class UFortItemDefinition*                    ItemDefinition;                                    // 0x0018
